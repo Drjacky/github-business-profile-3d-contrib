@@ -1,8 +1,8 @@
 import axios from 'axios';
 import * as type from './type';
 
-/** export const URL = 'https://github.toasttab.com/api/graphql'; */
-export const URL = 'https://api.github.toasttab.com/graphql';
+export const URL = 'https://github.toasttab.com/api/graphql';
+/** export const URL = 'https://api.github.toasttab.com/graphql'; */
 const maxReposOneQuery = 100;
 
 export type CommitContributionsByRepository = Array<{
