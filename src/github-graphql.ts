@@ -1,7 +1,10 @@
 import axios from 'axios';
 import * as type from './type';
 
-export const URL = 'https://github.toasttab.com/api/graphql'
+const GITHUB_API_URL = process.env.GITHUB_API_URL || "https://api.github.com/graphql";
+
+export const URL = GITHUB_API_URL
+/** export const URL = 'https://github.toasttab.com/api/graphql' */
     /** 'https://api.github.toasttab.com/graphql'; */
 const maxReposOneQuery = 100;
 
